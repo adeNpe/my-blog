@@ -1,0 +1,117 @@
+@font-face
+{
+	font-family:"FZXiHei1";
+	src: url("font/FZXiHei I-Z08S.TTF");/*css添加外部字库*/
+}
+
+:root {
+	  --background-color: #ffffff;
+	  --text-color: rgb(25,25,25);
+}
+
+head {
+	background-color: var(--background-color);
+    color: var(--text-color);	
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Times New Roman","FZXiHei1",sans-serif;
+    font-size: 100%;
+}
+
+button {
+	border-radius: 12px;
+	border: none;
+	outline: none;
+}
+
+/*我尽量让css的从上往下#的排布跟html里项目的顺序一致*/
+
+#header {
+    padding-top: 35px;
+    border-bottom: 1px solid #EEE;
+	font-family: "Times New Roman","FZXiHei1",sans-serif;
+}
+
+#blogTitle {
+    margin-left: 30%;
+    margin-right: auto;
+	width: 300px;
+	color: var(--text-color);
+    font-size: 2.6em;	
+	display: block; /*这个block还真删不了*/
+}
+
+#RyukoRed {
+	color: #d4340d;
+	font-weight: bold;
+}
+
+
+
+#blogDescription {
+	margin-top: 15px;
+	margin-left: 30%;
+    margin-right: auto;
+	width=500px;
+	color: silver;
+    font-size: 1.3em;	
+	display: block; 
+}
+
+#nav-menu {
+	margin-left: 30%;
+	margin-top: 25px;
+    padding: 0;
+}
+
+#nav-menu a {
+    display: block;
+    margin-right: -1px;
+    padding: 0 20px;
+    border: 1px solid #EEE;
+    border-bottom: none;
+    height: 32px;
+    line-height: 32px;
+    color: #444;
+    float: left;
+}
+
+#nav-menu a:hover,#nav-menu .current {
+    background: #F6F6F6;
+}
+
+
+a {
+    color: #3354AA;
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(max-width: 700px) { 
+    #header {		/*页面过窄时候让container变成header块居中显示（之前是加上侧栏的二者大块居中）*/
+        text-align:center;
+    }
+	#blogTitle {	/*页面过窄的时候使得标题居中，700px是一个很适合27寸2k显示器的数字，使得两个阶段衔接不跳跃*/
+		font-size: 75%;
+		margin-left: auto;
+		text-align:center;
+	}
+}
+
+/*
+@media(min-width: 1200px) { //这些media定义应该给手机端上网适配的，我暂时用不着
+    .container {
+        max-width:952px;
+    }
+}
+*/
+

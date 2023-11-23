@@ -1,0 +1,8 @@
+#modeSwitchButton{
+    float:right;
+	margin-right: 30%;
+	height: 35px;
+	width: 70px;
+	background-color: rgb(25,25,25);
+	color: rgb(200,200,200);
+}
